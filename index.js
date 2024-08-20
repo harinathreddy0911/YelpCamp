@@ -19,6 +19,8 @@ const LocalStrategy =require('passport-local')
 const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
 const MongoStore = require('connect-mongo');
+
+//To sanitize html
 app.use(mongoSanitize());
 app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs');
